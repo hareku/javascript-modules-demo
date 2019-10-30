@@ -1,0 +1,20 @@
+{
+  "name": "javascript-modules-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hareku/javascript-modules-demo.git",
+  "author": "hareku <hareku908@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "run-p build:*",
+    "build:iife": "rollup index.js --file output/iife.js --format iife",
+    "build:cjs": "rollup index.js --file output/cjs.js --format cjs",
+    "build:amd": "rollup index.js --file output/amd.js --format amd",
+    "build:esm": "rollup index.js --file output/esm.js --format esm",
+    "build:umd": "rollup index.js --file output/umd.js --format umd --name MyModule"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.26.0"
+  }
+}
