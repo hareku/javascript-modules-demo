@@ -1,5 +1,5 @@
-var index = () => {
-  return 'Hello World'
-};
+import 'core-js';
 
-export default index;
+(async function() {
+  await Promise.resolve(console.log('🎉'));
+}());

@@ -1,9 +1,7 @@
-define(function () { 'use strict';
+define(['core-js'], function (coreJs) { 'use strict';
 
-  var index = () => {
-    return 'Hello World'
-  };
-
-  return index;
+  (async function() {
+    await Promise.resolve(console.log('🎉'));
+  }());
 
 });

@@ -1,7 +1,7 @@
 'use strict';
 
-var index = () => {
-  return 'Hello World'
-};
+require('core-js');
 
-module.exports = index;
+(async function() {
+  await Promise.resolve(console.log('🎉'));
+}());
